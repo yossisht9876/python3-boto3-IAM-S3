@@ -67,7 +67,7 @@ def delete_user_keys_policy(awskeyid, awssecretkey, iam_username, bucket_name):
 
         iam.delete_access_key(UserName=iam_username, AccessKeyId=key_id)
         client = session.client('iam')
-        response = client.delete_policy(PolicyArn='arn:aws:iam::988965462563:policy/DATASCI-S3-RO-%s' % bucket_name)
+        response = client.delete_policy(PolicyArn='arn:aws:iam::acoountID:policy/DATASCI-S3-RO-%s' % bucket_name)
         #print(response)
 
         client = session.client('iam')
