@@ -95,16 +95,6 @@ def list_s3_buckets(awskeyid, awssecretkey):
     except NameError:
         sys.exit(1)
 
-#def list_s3_buckets(aws_access_key_id, aws_secret_access_key):
-#        ACCESS_KEY='AKIAJ3SSZ36C3VPM2BPQ'
-#        SECRET_KEY='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'
-
-#        session = Session(aws_access_key_id=ACCESS_KEY,
-#                          aws_secret_access_key=SECRET_KEY)
-#        s3 = boto3.resource('s3')
-#        for bucket in s3.buckets.all():
-#           print(bucket.name)
-
 
 def main():
 
